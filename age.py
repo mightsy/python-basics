@@ -1,4 +1,6 @@
-user_input = input ("Введите свой возраст: ")
-age = int(user_input)
-future_age = age + 5
-print("Через 5 лет тебе будет: " + str(future_age))
+user_input = input("Введите свой возраст:")
+if user_input.isdigit():
+    age = int(user_input)
+    print(f"Через 5 лет вам будет {age + 5}")
+else:
+    print("Ошибка: введено не коректное значени!")
